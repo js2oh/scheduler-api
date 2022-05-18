@@ -1,5 +1,9 @@
 const router = require("express").Router();
 
+const CREATE = "CREATE";
+const EDIT = "EDIT";
+const DELETE = "DELETE";
+
 module.exports = (db, updateAppointment) => {
   router.get("/appointments", (request, response) => {
     db.query(
